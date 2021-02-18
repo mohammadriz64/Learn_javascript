@@ -1,0 +1,1 @@
+document.write("<p>This is paraghraph written in <b style='color:red'> ext js </b> file.</p>");

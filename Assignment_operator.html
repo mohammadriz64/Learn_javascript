@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,6 +14,7 @@
         letter-spacing: 3px;
         padding-left: 50px;
     }
+
     h3 {
         color: rgb(153, 20, 20);
         font-family: 'Pacifico', cursive;
@@ -24,26 +26,37 @@
         padding-left: 50px;
         line-height: 30px;
     }
-  
 </style>
+
 <body>
     <h1> Operators</h1>
     <div>
         <script>
             document.write('<h3> Assignment Operator (=) :--</h3>');
-            
-            var x="Rizwan";
-            document.write('Name is:- <b>'+x+'</b><br>');
 
-            document.write('<h3> Comparison Operator (==) :--</h3>');
-            document.write('<b>'+(10==10)+'</b><br>'); //isEqual to
-            document.write('<b>'+(10=='10')+'</b><br>'); //will return true
+            var x = "Rizwan";
+            document.write('Name is:- <b>' + x + '</b><br>');
+
+            document.write('<h3> Comparison(isEqual to) Operator (==) :--</h3>');
+            document.write('<b>' + (10 == 10) + '</b><br>'); //isEqual to
+            document.write('<b>' + (10 == '10') + '</b><br>'); //will return true
             //output will be true,bcz this oeprator will only check value
-
-            document.write('<b>'+(10==='10')+'</b><br>'); //is Identical,and will return false.
+            
+            document.write('<h3> Comparison(Identical to) Operator (==) :--</h3>');
+            document.write('<b>' + (10 === '10') + '</b><br>'); //is Identical,and will return false.
             //(===) will compare value as well as datatype..!!!
+
+            document.write('<h3> Comparison(Not-Equal to) Operator (==) :--</h3>');
+            document.write('<b>'+(10 != '10')+'</b><br>'); //will return opposite of isEqual to
+            
+            document.write('<h3> Comparison(Not-Equal to) Operator (==) :--</h3>');
+            document.write('<b>'+(10 !== '10')+'</b><br>'); //will return true (not-identical)
+
+
+
         </script>
     </div>
-    
+
 </body>
+
 </html>

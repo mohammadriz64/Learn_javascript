@@ -9,9 +9,14 @@
 <body>
     <h2>Js Object</h2>
     <p id="car_object"></p>
+    <p id="person_object"></p>
     <script>
-        car=[{type:"fiat",model:"500",weight:"750kg"},{type:"Honda",model:"500",weight:"750kg"}]
+        car=[{type:"fiat",model:"500",weight:"750kg"},{type:"Honda",model:"500",weight:"750kg"}];
         document.getElementById("car_object").innerHTML="The Car is "+car[1].type;
+
+        person={name:"Rizwan",learning:"Javascript",mode:"Basic"};
+        document.getElementById("person_object").innerHTML="<b>The person's name is "+person.name+" He is learning "+person.learning+" learning level is "+person.mode+"</b>";
+        
 
     </script>
 </body>

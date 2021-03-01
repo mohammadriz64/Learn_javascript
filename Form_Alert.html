@@ -9,7 +9,8 @@
 </head>
 <script>
     function emptyMsg() {
-        if (document.getElementById("uname", "upass").value == "" || value == null)
+        if (document.getElementById("uname", "upass").value == "")
+           (document.getElementById("upass").value == "");
             document.getElementById("uname").style.borderColor = "red";
         document.getElementById("upass").style.borderColor = "red"; {
             alert("Fields are Empty..!!!");
@@ -55,8 +56,12 @@
         color: rgb(10, 10, 10);
         background-color: rgb(245, 245, 250);
         border-radius: 5px;
+        border-color: goldenrod;
         padding: 5px;
         font-size: 14px;
+    }
+    button:hover{
+        transform: scale(1.08);
     }
 </style>
 

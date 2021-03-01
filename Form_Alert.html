@@ -1,12 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic Form Alert</title>
 </head>
+<script>
+    function emptyMsg() {
+        alert("Fields are Empty..!!!");
+    }
+</script>
+<style>
+    form {
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 2px 5px black;
+        position: absolute;
+        left: 40%;
+        top: 30%;
+        padding: 20px;
+        font-size: 16px;
+        background: #c8e2e3;
+    }
+
+    input[type="text"] {
+        display: block;
+        margin-top: 5px;
+        margin-bottom: 5px;
+
+
+    }
+
+    input[type="password"] {
+        display: block;
+margin-top: 5px;
+    }
+
+    button {
+        margin-top: 10px;
+        color: rgb(10, 10, 10);
+        background-color: rgb(74, 74, 248);
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 14px;
+    }
+</style>
+
 <body>
-    
+    <form>
+        Name:-<input type="text" placeholder="Username" required>
+        Password:-<input type="password" placeholder="password" required>
+        <button onclick="emptyMsg()">Submit</button>
+    </form>
 </body>
+
 </html>

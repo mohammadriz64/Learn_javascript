@@ -9,39 +9,51 @@
 </head>
 <script>
     function emptyMsg() {
-        alert("Fields are Empty..!!!");
+        if (document.getElementById("uname", "upass").value == "" || value == null)
+            document.getElementById("uname").style.borderColor = "red";
+        document.getElementById("upass").style.borderColor = "red"; {
+            alert("Fields are Empty..!!!");
+            return false;
+        }
     }
 </script>
 <style>
     form {
         padding: 20px;
         border-radius: 10px;
-        box-shadow: 2px 2px 2px 5px black;
+        box-shadow: 0px 2px 0px 5px rgb(204, 201, 201);
         position: absolute;
         left: 40%;
         top: 30%;
         padding: 20px;
         font-size: 16px;
-        background: #c8e2e3;
+        background: #be6d78;
+        color: white;
     }
 
     input[type="text"] {
         display: block;
         margin-top: 5px;
         margin-bottom: 5px;
+        border-radius: 10px;
+        padding: 5px;
+        outline: none;
 
 
     }
 
     input[type="password"] {
         display: block;
-margin-top: 5px;
+        margin-top: 5px;
+        border-radius: 10px;
+        padding: 5px;
+        outline: none;
     }
 
     button {
         margin-top: 10px;
         color: rgb(10, 10, 10);
-        background-color: rgb(74, 74, 248);
+        background-color: rgb(245, 245, 250);
         border-radius: 5px;
         padding: 5px;
         font-size: 14px;
@@ -49,10 +61,10 @@ margin-top: 5px;
 </style>
 
 <body>
-    <form>
-        Name:-<input type="text" placeholder="Username" required>
-        Password:-<input type="password" placeholder="password" required>
-        <button onclick="emptyMsg()">Submit</button>
+    <form name="myForm">
+        Name:-<input type="text" id="uname" placeholder="Username" required>
+        Password:-<input type="password" id="upass" placeholder="password" required>
+        <button onclick="return emptyMsg()">Submit</button>
     </form>
 </body>
 

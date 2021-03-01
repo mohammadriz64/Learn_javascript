@@ -22,10 +22,10 @@
 </style>
 <body>
     <script>
-        freeCalls=105;
+        freeCalls=101;
         pay_date=10;
-        current_date=5;
-        if(freeCalls > 100 ){
+        current_date=7;
+        if(freeCalls > 100 && pay_date-current_date <= 3 ){
         document.write('<div>Please pay the bill to avoid late charges</div>');
         }
     </script>

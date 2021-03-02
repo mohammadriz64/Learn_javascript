@@ -6,12 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All Arithmetic Operaotors</title>
 </head>
-<script>
+<style>
+    form{
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 10px;
+        width: fit-content;
+        position: absolute;
+        top: 30%;
+        left: 35%;
+    }
+    h3{
+        text-align: center;
+    }
+    button{
+        margin: 10px;
 
+    }
+</style>
+<script>
+    function add(){
+        a= document.getElementById("num1").value;
+        b= document.getElementById("num2").value;
+        // x=a+b;
+        alert("Addition of two numbers"+(a+b));
+    }
 </script>
 <body>
     <form>
-        
+        <h3>Arithmetic Operator Application</h3>
+        <input id="num1" style="margin: 10px;" type="text" placeholder="Enter No.1">
+        <input id="num2" type="text" placeholder="Enter No.2">
+        <br>
+        <button onClick="add()">Add</button><button>Substract</button><button>Multiply</button><button>Divide</button><button>Mode</button>
     </form>
     
 </body>

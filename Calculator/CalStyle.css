@@ -2,7 +2,7 @@
     width: 470px;
     height: 70px;
     text-align: center;
-    background-color: rgb(50, 50, 216);
+    background-color: rgb(6, 6, 236);
 }
 input{
     width: 100px;
@@ -11,7 +11,7 @@ input{
     font-size: 30px;
     border-radius: 10px;
     margin: 10px;
-    background-color: #000;
+    background-color: rgb(34, 33, 33);
     color: #fff;
     border-style: none;
 }
@@ -22,12 +22,11 @@ input{
     width: fit-content;
     border-radius: 10px;
     position: relative;
-    left: 10%;
+    left: 12%;
 }
 h1{
     text-align: center;
     font-size: 25px;
-    margin-right: 150px;
     margin-top: 20px;
 }
 .btn1{
@@ -41,4 +40,8 @@ h1{
 }
 .btn4{
     background-color: green;
+}
+.btnC{
+    background-color: rgb(216, 21, 37);
+
 }

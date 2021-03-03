@@ -16,13 +16,12 @@ input{
     border-style: none;
 }
 #myform{
-    margin-left: 225px;
     margin-top: 20px;
     border: 1px solid green;
     width: fit-content;
     border-radius: 10px;
     position: relative;
-    left: 12%;
+    left: 30%;
 }
 h1{
     text-align: center;

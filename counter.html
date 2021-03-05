@@ -5,19 +5,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Increment by 1</title>
 </head>
 
 <body>
     <script>
         var incr = 0;
+        var decr=0;
 
         function increment() {
             incr += 1;
+            decr=incr;
             document.getElementById("view").value = incr;
+            if(incr==20){
+                alert("sorry max limit is 20");
+            }
+        }
+        function decrement() {
+            decr -= 1;
+            incr=decr;
+            document.getElementById("view").value = decr;
+            if(decr==0){
+                alert("sorry max limit is 0");
+            }
         }
     </script>
     <button onclick="increment()">add+1</button>
+    <button onclick="decrement()">add-1</button>
     <input id="view" type="text" style="text-align: center;">
 </body>
 

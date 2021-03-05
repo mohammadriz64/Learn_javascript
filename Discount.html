@@ -7,6 +7,34 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <script>
+        function disc(){
+            
+            var a="rizwan";
+            if(a==="amer"){
+                var a="amer";
+                document.getElementById("write").innerHTML="you have 60 % discount available on products..!!!!";
+            }
+            else if(a=="salman"){
+                // var a="salman";
+                document.getElementById("write").innerHTML="you have 50 % discount available on products..!!!!";
+            }
+            else if(a=="aadil"){
+                // var a="aadil";
+                document.getElementById("write").innerHTML="you have 45 % discount available on products..!!!!";
+            }
+            else if(a=="rizwan"){
+                // var a="rizwan";
+                document.getElementById("write").innerHTML="you have 65 % discount available on products..!!!!";
+            }
+            else{
+                document.getElementById("write").innerHTML="everyOne will get 20% discount on products..!!!"
+            }
+
+        }
+    </script>
+    <input type="text">
+    <button onclick="disc()">submit</button>
+    <p id="write"></p>
 </body>
 </html>

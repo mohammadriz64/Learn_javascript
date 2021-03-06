@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Switch Case Js</title>
 </head>
-<body>
-    <input id="swtcon" type="text"> 
-    <button onclick="handle">Click</button>
-    <script>
-        function handle(){
-        var name=document.getElementById("swtcon").value;
-        }
 
+<body>
+    <input id="swtcon" type="text">
+    <button onclick="handle">Click</button>
+    <p id="print"></p>
+    <script>
+        function handle() {
+            var name = document.getElementById("swtcon").value;
+
+            switch (name) {
+                case "aadil":
+                    document.getElementById("print").innerHTML = "He is learning JavaScript.";
+                    break;
+                case "salman":
+                    document.getElementById("print").innerHTML = "He is learning Node Js.";
+                    break;
+                case "zahour":
+                    document.getElementById("print").innerHTML = "He is learning React Js.";
+                    break;
+
+            }
+        }
     </script>
-    
+
 </body>
+
 </html>

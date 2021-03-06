@@ -10,23 +10,24 @@
 
 <body>
     <input id="swtcon" type="text">
-    <button onclick="handle">Click</button>
+    <button onclick="press()">Click</button>
     <p id="print"></p>
     <script>
-        function handle() {
+        function press() {
             var name = document.getElementById("swtcon").value;
 
             switch (name) {
                 case "aadil":
                     document.getElementById("print").innerHTML = "He is learning JavaScript.";
                     break;
-                case "salman":
+                case "salman ":
                     document.getElementById("print").innerHTML = "He is learning Node Js.";
                     break;
                 case "zahour":
                     document.getElementById("print").innerHTML = "He is learning React Js.";
                     break;
-
+                    default:
+                        document.getElementById("print").innerHTML = "He is going to learn HTML CSS.";
             }
         }
     </script>

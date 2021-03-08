@@ -2,7 +2,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background: lightcoral;
+    background: rgb(233, 132, 132);
 }
 .heading{
     text-align: center;
@@ -28,7 +28,7 @@ body{
     box-shadow: rgb(184,2,2);
 }
 .image:hover{
-    border: 3px solid #fa1e34;
+    border: 3px solid #bb0710df;
 }
 img{
     width: 118px;
@@ -57,6 +57,9 @@ img{
     padding: 10px;
     margin: 0px;
     margin-left: -160px;
+}
+.profile:hover{
+    
 }
 .name{
     margin-top: 40px;

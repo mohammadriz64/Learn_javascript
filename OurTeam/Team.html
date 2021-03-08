@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Team.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <title>OurTeam Profile</title>
 </head>
+
 <body>
     <h1 class="heading">Our Team</h1>
     <div class="image-container">
@@ -20,21 +24,24 @@
             <div class="info">
                 <h1 class="name" id="name">Jason Mill</h1>
                 <h3 class="status" id="status">Accounts Head</h3>
-                <p class="about" id="about">Jason Mill is responsible for the day-to-day aspects of the business's accounting and reporting functions and he reports directly to the Chief Finance Officer who takes responsibility over the entire financial department.</p>
+                <p class="about" id="about">Jason Mill is responsible for the day-to-day aspects of the business's
+                    accounting and reporting functions and he reports directly to the Chief Finance Officer who takes
+                    responsibility over the entire financial department.</p>
             </div>
         </div>
     </div>
     <script>
-        function fetch_info(){
-        let profile=["1.jpg","2.jpg","3.jpg","4.jpg","5.jpg",];
-        let name=["Jason Mill","Alex Cary","John Miller","Tony Shaw","Andrew Mike"];
-        let status=["Accounts Head","Admin","Jr.Web Designer","Senior Developer","DBA Admin"];
-        document.getElementById("profile").src=profile[i];
-        document.getElementById("name").innerHTML=name[i];
-        document.getElementById("status").innerHTML=status[i];
-        document.getElementById("about").innerHTML=name[i]+"";
+        function fetch_info() {
+            let profile = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", ];
+            let name = ["Jason Mill", "Alex Cary", "John Miller", "Tony Shaw", "Andrew Mike"];
+            let status = ["Accounts Head", "Admin", "Jr.Web Designer", "Senior Developer", "DBA Admin"];
+            document.getElementById("profile").src = profile[i];
+            document.getElementById("name").innerHTML = name[i];
+            document.getElementById("status").innerHTML = status[i];
+            document.getElementById("about").innerHTML = name[i] + "";
 
         }
     </script>
 </body>
+
 </html>

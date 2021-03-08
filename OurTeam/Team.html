@@ -1,47 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Team.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Team.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <title>OurTeam Profile</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <h1 class="heading">Our Team</h1>
     <div class="image-container">
-        <div class="image"><img src="./images/1-member.jpg" alt="our members"></div>
-        <div class="image"><img src="./images/2-member.jpg" alt="our members"></div>
-        <div class="image"><img src="./images/3-member.jpg" alt="our members"></div>
-        <div class="image"><img src="./images/4-member.jpg" alt="our members"></div>
-        <div class="image"><img src="./images/5-member.jpg" alt="our members"></div>
-        <div class="info-container">
-            <img src="./images/1-member.jpg" alt="">
-            <div class="info">
-                <h1 class="name" id="name">Jason Mill</h1>
-                <h3 class="status" id="status">Accounts Head</h3>
-                <p class="about" id="about">Jason Mill is responsible for the day-to-day aspects of the business's
-                    accounting and reporting functions and he reports directly to the Chief Finance Officer who takes
-                    responsibility over the entire financial department.</p>
-            </div>
+      <div class="image" onclick="fetch_info(0)">
+        <img src="./images/1-member.jpg" alt="our members" />
+      </div>
+      <div class="image" onclick="fetch_info(1)">
+        <img src="./images/2-member.jpg" alt="our members" />
+      </div>
+      <div class="image" onclick="fetch_info(2)">
+        <img src="./images/3-member.jpg" alt="our members" />
+      </div>
+      <div class="image" onclick="fetch_info(3)">
+        <img src="./images/4-member.jpg" alt="our members" />
+      </div>
+      <div class="image" onclick="fetch_info(4)">
+        <img src="./images/5-member.jpg" alt="our members" />
+      </div>
+      <div class="info-container">
+        <img class="profile" id="profile" src="1.jpg" alt="" />
+        <div class="info">
+          <h1 class="name" id="name">Jason Mill</h1>
+          <h3 class="status" id="status">Accounts Head</h3>
+          <p class="about" id="about">
+            Jason Mill is responsible for the day-to-day aspects of the
+            business's accounting and reporting functions and he reports
+            directly to the Chief Finance Officer who takes responsibility over
+            the entire financial department.
+          </p>
         </div>
+      
+      </div>
     </div>
+
     <script>
-        function fetch_info() {
-            let profile = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg", ];
-            let name = ["Jason Mill", "Alex Cary", "John Miller", "Tony Shaw", "Andrew Mike"];
-            let status = ["Accounts Head", "Admin", "Jr.Web Designer", "Senior Developer", "DBA Admin"];
-            document.getElementById("profile").src = profile[i];
-            document.getElementById("name").innerHTML = name[i];
-            document.getElementById("status").innerHTML = status[i];
-            document.getElementById("about").innerHTML = name[i] + "";
-
-        }
+      function fetch_info(i) {
+        let profile = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
+        let name = [
+          "Jason Mill",
+          "Alex Cary",
+          "John Miller",
+          "Tony Shaw",
+          "Andrew Mike",
+        ];
+        let status = [
+          "Accounts Head",
+          "Web Developer",
+          "Jr.Web Designer",
+          "Senior Developer",
+          "DBA Admin",
+        ];
+        let about = [
+          "The Head of Accounting oversees all activities of the accounting and tax accounting departments and is involved in the supervision and management of general accounting activities, analyses, business partnership, and the maintenance of effective internal controls while ensuring statutory compliance in all accounting.",
+          "Web developers design and create websites. They are responsible for the look of the site. They are also responsible for the site's technical aspects, such as its performance and capacity, which are measures of a website's speed and how much traffic the site can handle.",
+          "Web designers plan, create and code internet sites and web pages, many of which combine text with sounds, pictures, graphics and video clips. A web designer is responsible for creating the design and layout of a website or web pages. It and can mean working on a brand new website or updating an already existing site.",
+          "performs various development duties, such as coding and web development. Senior Developers may specialize in a specific area, oversee projects, and manage junior developers.",
+          "an IT professional who works on creating, maintaining, querying, and tuning the database of the organization. They are also responsible for maintaining data security and integrity.",
+        ];
+        document.getElementById("profile").src = profile[i];
+        document.getElementById("name").innerHTML = name[i];
+        document.getElementById("status").innerHTML = status[i];
+        document.getElementById("about").innerHTML = name[i] + " " + about[i];
+      }
     </script>
-</body>
-
+  </body>
 </html>

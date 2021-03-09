@@ -7,16 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<script>
-    const number = prompt('enter a number');
-    if (number % 2 == 0) {
-        document.write("the number is even");
-    } else {
-        document.write("the number is odd");
-    }
-</script>
-
 <body>
+    Enter Date:-
+    <script>
+        day=1;
+        document.write("<select>");
+            while(day<=31){
+                document.write("<option>"+day+"</option>");
+                day++;
+            }
+            document.write("</select>");
+    
+    </script>
+        
+    
 </body>
 
 </html>

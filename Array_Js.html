@@ -7,12 +7,21 @@
     <title>Array</title>
 </head>
 <body>
-    <h3>JavaScript Arrayh3>
+    <h3>JavaScript Array</h3>
         <p id="demo"></p>
+        <p id="arr"></p>
+        <p id="uparr"></p>
 
     <script>
         cars=["audi","BMW","Honda","Hyundai"];
         document.getElementById("demo").innerHTML= cars;
+        var b= [10,20,30,"Rizwan"];
+        document.getElementById("arr").innerHTML= "The Values in given array is <b> (" +b+ "</b>)<br>";
+        document.getElementById("arr").innerHTML= "The Length of given array is <b> (" +b.length+ "</b>)<br>";
+        b[0]=b[2]*3;
+        b[4]="Aadil";
+        document.getElementById("uparr").innerHTML= "The Values of updated given array is <b> (" +b+ "</b>)<br>";
+        document.getElementById("uparr").innerHTML= "The Length of updated array is <b> (" +b.length+ "</b>)<br>";
     </script>
 </body>
 </html>
